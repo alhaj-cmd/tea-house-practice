@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House practice website</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Work+Sans:wght@500;600&display=swap" rel="stylesheet">
     <!-- Tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,19 +16,31 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
-              }
+                color: ' linear-gradient(270deg, #FF0000 0%, #FF8938 100%)',
+              },
+            font:{
+              manrope:'Manrope, sans-serif'
+
+              },
             }
           }
         }
       </script>
 </head>
-<body>
-    <header>
+<body class="mx-2">
+    <header class="container px-4 bg-slate-400">
         <!-- nav -->
         <!-- banner section -->
-        <h1 class="text-2xl">Hello Tea House</h1>
-        <section>
+        <section class="grid grid-cols-1 mt-5 py-4 md:grid-cols-2">
+        <div class="">
+            <h1 class="text-6xl text-manrope">It's good <br> tea time at <br> The <br> Tea House</h1>
+            <p>Tea and Botanical Solutions Supplier give <br> Optimum Satisfaction To your Tests Buds</p>
+            <button class="mt-5 h-16 w-44 bg-pink-300 rounded-2xl">Explore More</button>
+        </div>
+        <div>
+            <img src="./images/banner.png" alt="">
+        </div>
+        
 
         </section>
     </header>
